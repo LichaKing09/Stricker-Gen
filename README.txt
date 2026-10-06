@@ -1,0 +1,1 @@
+STRIKER//GEN multipágina. Abrí index.html. Cada sistema tiene su propia página y Golden Generation conserva la grilla de 20 jugadores.

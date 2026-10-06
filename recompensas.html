@@ -1,0 +1,1397 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RECOMPENSAS | STRIKER//GEN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ========================================
+           RECOMPENSAS
+        ======================================== */
+
+        .reward-intro {
+            max-width: 900px;
+            margin-bottom: 70px;
+        }
+
+        .reward-intro h2 {
+            font:
+                900 clamp(45px, 7vw, 90px) / .85
+                'Barlow Condensed';
+
+            letter-spacing: -2px;
+            margin-bottom: 25px;
+        }
+
+        .reward-intro h2 span {
+            color: var(--accent);
+        }
+
+        .reward-intro p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.9;
+            max-width: 820px;
+        }
+
+        .reward-section {
+            margin: 70px 0;
+        }
+
+        .reward-number {
+            display: block;
+
+            color: var(--blue);
+
+            font:
+                800 10px
+                'Barlow Condensed';
+
+            letter-spacing: 3px;
+
+            margin-bottom: 8px;
+        }
+
+        .reward-section > h2 {
+            font:
+                900 clamp(40px, 5vw, 68px) / .9
+                'Barlow Condensed';
+
+            letter-spacing: -1px;
+
+            margin-bottom: 18px;
+        }
+
+        .reward-section > h2 span {
+            color: var(--accent);
+        }
+
+        .reward-section > p {
+            max-width: 850px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+        }
+
+        /* ========================================
+           RECOMPENSA DESTACADA
+        ======================================== */
+
+        .main-reward {
+            margin-top: 30px;
+
+            padding: 40px;
+
+            border: 1px solid rgba(216, 255, 62, .25);
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(216, 255, 62, .1),
+                    transparent 55%
+                ),
+                linear-gradient(
+                    145deg,
+                    #141a23,
+                    #0b1016
+                );
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-reward::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 4px;
+            height: 100%;
+
+            background: var(--accent);
+        }
+
+        .main-reward .points {
+            font:
+                900 clamp(65px, 9vw, 110px) / .8
+                'Barlow Condensed';
+
+            color: var(--accent);
+
+            margin-bottom: 15px;
+        }
+
+        .main-reward h3 {
+            font:
+                800 34px
+                'Barlow Condensed';
+
+            margin-bottom: 12px;
+        }
+
+        .main-reward p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            max-width: 750px;
+        }
+
+        /* ========================================
+           POSICIONES
+        ======================================== */
+
+        .position-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 14px;
+
+            margin-top: 30px;
+        }
+
+        .position-card {
+            min-height: 300px;
+
+            padding: 28px;
+
+            border: 1px solid var(--line);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #141a23,
+                    #0c1117
+                );
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .position-card::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 3px;
+
+            background: var(--blue);
+        }
+
+        .position-card:nth-child(2)::before {
+            background: var(--red);
+        }
+
+        .position-card:nth-child(3)::before {
+            background: var(--accent);
+        }
+
+        .position-card:nth-child(4)::before {
+            background: #b56cff;
+        }
+
+        .position-card .position {
+            color: var(--muted);
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+            font-weight: 800;
+        }
+
+        .position-card h3 {
+            font:
+                900 38px
+                'Barlow Condensed';
+
+            margin:
+                25px
+                0
+                15px;
+        }
+
+        .position-card .points {
+            color: var(--accent);
+
+            font:
+                900 48px
+                'Barlow Condensed';
+
+            line-height: .8;
+
+            margin-bottom: 15px;
+        }
+
+        .position-card p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+        /* ========================================
+           RECOMPENSAS INDIVIDUALES
+        ======================================== */
+
+        .reward-list {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 14px;
+
+            margin-top: 30px;
+        }
+
+        .reward-card {
+            padding: 26px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+
+            transition: .25s;
+        }
+
+        .reward-card:hover {
+            transform: translateY(-4px);
+
+            border-color:
+                rgba(216, 255, 62, .35);
+        }
+
+        .reward-card h3 {
+            font:
+                800 28px
+                'Barlow Condensed';
+
+            margin-bottom: 8px;
+        }
+
+        .reward-card .amount {
+            display: inline-block;
+
+            color: var(--accent);
+
+            font:
+                900 27px
+                'Barlow Condensed';
+
+            margin-bottom: 10px;
+        }
+
+        .reward-card p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.75;
+        }
+
+        /* ========================================
+           TABLA
+        ======================================== */
+
+        .reward-table {
+            width: 100%;
+
+            border-collapse: collapse;
+
+            margin-top: 30px;
+        }
+
+        .reward-table th,
+        .reward-table td {
+            padding: 17px;
+
+            border-bottom:
+                1px solid var(--line);
+
+            text-align: left;
+
+            font-size: 12px;
+        }
+
+        .reward-table th {
+            color: var(--accent);
+
+            font-size: 9px;
+
+            letter-spacing: 1.5px;
+        }
+
+        .reward-table td {
+            color: var(--muted);
+
+            line-height: 1.6;
+        }
+
+        .reward-table td:first-child {
+            color: #f4f6f8;
+
+            font-weight: 700;
+        }
+
+        .reward-table .value {
+            color: var(--accent);
+
+            font-weight: 900;
+        }
+
+        /* ========================================
+           LIGA
+        ======================================== */
+
+        .league-reward {
+            margin-top: 30px;
+
+            padding: 40px;
+
+            border: 1px solid rgba(52, 120, 255, .3);
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(52, 120, 255, .14),
+                    transparent 60%
+                ),
+                #0c1117;
+        }
+
+        .league-reward h3 {
+            font:
+                900 50px
+                'Barlow Condensed';
+
+            margin-bottom: 12px;
+        }
+
+        .league-reward .big {
+            color: var(--accent);
+
+            font:
+                900 clamp(65px, 9vw, 110px) / .8
+                'Barlow Condensed';
+
+            margin-bottom: 20px;
+        }
+
+        .league-reward p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+
+            max-width: 800px;
+        }
+
+        .league-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 30px;
+        }
+
+        .league-card {
+            padding: 28px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+        }
+
+        .league-card h3 {
+            font:
+                900 38px
+                'Barlow Condensed';
+
+            margin-bottom: 5px;
+        }
+
+        .league-card .points {
+            color: var(--accent);
+
+            font:
+                900 42px
+                'Barlow Condensed';
+
+            margin-bottom: 10px;
+        }
+
+        .league-card p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+        /* ========================================
+           REPARTO
+        ======================================== */
+
+        .distribution {
+            margin-top: 30px;
+
+            padding: 30px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+        }
+
+        .distribution h3 {
+            font:
+                800 32px
+                'Barlow Condensed';
+
+            margin-bottom: 12px;
+        }
+
+        .distribution p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 12px;
+        }
+
+        .distribution ul {
+            padding-left: 20px;
+        }
+
+        .distribution li {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.8;
+
+            margin-bottom: 7px;
+        }
+
+        /* ========================================
+           STAFF
+        ======================================== */
+
+        .staff-box {
+            margin-top: 30px;
+
+            padding: 30px;
+
+            border: 1px solid rgba(216, 255, 62, .2);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(216, 255, 62, .05),
+                    rgba(13, 17, 24, .95)
+                );
+        }
+
+        .staff-box h3 {
+            font:
+                800 32px
+                'Barlow Condensed';
+
+            color: var(--accent);
+
+            margin-bottom: 10px;
+        }
+
+        .staff-box p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+        /* ========================================
+           FINAL
+        ======================================== */
+
+        .final-reward {
+            margin-top: 80px;
+
+            padding: 45px;
+
+            border: 1px solid rgba(216, 255, 62, .25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(216, 255, 62, .06),
+                    rgba(10, 14, 19, .95)
+                );
+        }
+
+        .final-reward h2 {
+            font:
+                900 clamp(42px, 6vw, 75px) / .85
+                'Barlow Condensed';
+
+            margin-bottom: 15px;
+        }
+
+        .final-reward h2 span {
+            color: var(--accent);
+        }
+
+        .final-reward p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+
+            max-width: 850px;
+        }
+
+        @media (max-width: 900px) {
+
+            .position-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .league-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .position-grid,
+            .reward-list {
+                grid-template-columns: 1fr;
+            }
+
+            .main-reward,
+            .league-reward,
+            .final-reward {
+                padding: 24px;
+            }
+
+            .reward-table {
+                font-size: 11px;
+            }
+
+            .reward-table th,
+            .reward-table td {
+                padding: 11px 8px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+        ☰
+    </button>
+
+
+    <nav class="menu" id="menu">
+
+        <div class="menu-header">
+            <b>STRIKER//GEN</b>
+            <small>FOOTBALL ROLE PROJECT</small>
+        </div>
+
+        <div class="menu-label">PRINCIPAL</div>
+
+        <a href="index.html">Inicio</a>
+        <a href="guia.html">Guía de principiantes</a>
+
+        <div class="menu-label">SISTEMAS</div>
+
+        <a href="sistemas.html">Todos los sistemas</a>
+        <a href="stats.html">Estadísticas</a>
+        <a href="entrenamiento.html">Entrenamiento</a>
+        <a href="duelos.html">Duelos</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="despertar.html">Despertar</a>
+        <a href="flujo.html">Flujo</a>
+        <a href="evolucion.html">Evolución</a>
+        <a href="cansancio.html">Cansancio</a>
+
+        <div class="menu-label">COMPETICIÓN</div>
+
+        <a href="liga.html">Liga</a>
+
+        <div class="menu-label">ÉLITE</div>
+
+        <a href="golden.html">New Golden Generation</a>
+
+    </nav>
+
+
+    <header class="hero">
+
+        <div class="hero-inner">
+
+            <a class="back" href="guia.html">
+                ← VOLVER A LA GUÍA
+            </a>
+
+            <p class="kicker">
+                STRIKER//GEN / REWARDS DATABASE
+            </p>
+
+            <h1>
+                RECOMPENSAS
+            </h1>
+
+            <p>
+                El rendimiento dentro del campo tiene consecuencias.
+                Las grandes actuaciones pueden convertirse en puntos
+                capaces de hacer evolucionar a un jugador.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main class="page">
+
+
+        <!-- INTRO -->
+
+        <section class="reward-intro reveal">
+
+            <h2>
+                DEMUESTRE SU VALOR.
+                <span>RECIBA SU RECOMPENSA.</span>
+            </h2>
+
+            <p>
+                Las recompensas representan una de las principales
+                formas de evolución dentro de STRIKER//GEN.
+                Un jugador puede obtener puntos por sus actuaciones
+                individuales y por los logros alcanzados junto a su equipo.
+            </p>
+
+            <br>
+
+            <p>
+                Los puntos obtenidos mediante recompensas son
+                <strong class="highlight">Puntos de Recompensa</strong>
+                y pueden ser repartidos entre las estadísticas permitidas
+                por la recompensa correspondiente.
+            </p>
+
+        </section>
+
+
+        <!-- 01 POSICIONES -->
+
+        <section class="reward-section reveal">
+
+            <span class="reward-number">
+                01 / RECOMPENSAS POR POSICIÓN
+            </span>
+
+            <h2>
+                CADA POSICIÓN
+                <span>TIENE SU VALOR.</span>
+            </h2>
+
+            <p>
+                No todas las actuaciones dentro del campo tienen el
+                mismo peso. Por eso, las recompensas individuales se
+                adaptan a la función que cumple cada posición.
+            </p>
+
+
+            <div class="position-grid">
+
+
+                <div class="position-card">
+
+                    <span class="position">
+                        PORTERO
+                    </span>
+
+                    <h3>
+                        GK
+                    </h3>
+
+                    <div class="points">
+                        +5
+                    </div>
+
+                    <p>
+                        Una actuación defensiva extraordinaria,
+                        como una atajada decisiva o mantener la portería
+                        sin recibir goles en una situación de gran presión.
+                    </p>
+
+                </div>
+
+
+                <div class="position-card">
+
+                    <span class="position">
+                        DEFENSOR
+                    </span>
+
+                    <h3>
+                        DF
+                    </h3>
+
+                    <div class="points">
+                        +5
+                    </div>
+
+                    <p>
+                        Por una actuación defensiva destacada,
+                        incluyendo intervenciones decisivas, bloqueos,
+                        recuperaciones o neutralizar una jugada peligrosa.
+                    </p>
+
+                </div>
+
+
+                <div class="position-card">
+
+                    <span class="position">
+                        MEDIOCAMPISTA
+                    </span>
+
+                    <h3>
+                        MF
+                    </h3>
+
+                    <div class="points">
+                        +5
+                    </div>
+
+                    <p>
+                        Por una actuación sobresaliente en la creación
+                        del juego, generación de oportunidades o una
+                        asistencia decisiva.
+                    </p>
+
+                </div>
+
+
+                <div class="position-card">
+
+                    <span class="position">
+                        DELANTERO
+                    </span>
+
+                    <h3>
+                        FW
+                    </h3>
+
+                    <div class="points">
+                        +10
+                    </div>
+
+                    <p>
+                        Por convertir un gol durante un partido.
+                        El gol representa una de las recompensas
+                        individuales principales del sistema.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02 GOLES -->
+
+        <section class="reward-section reveal">
+
+            <span class="reward-number">
+                02 / GOLES
+            </span>
+
+            <h2>
+                EL GOL
+                <span>SE RECOMPENSA.</span>
+            </h2>
+
+            <p>
+                Marcar un gol es una de las acciones individuales de
+                mayor importancia dentro de un partido.
+            </p>
+
+            <div class="main-reward">
+
+                <div class="points">
+                    +10
+                </div>
+
+                <h3>
+                    PUNTOS POR GOL
+                </h3>
+
+                <p>
+                    El jugador que marque un gol obtiene
+                    <strong class="highlight">
+                        10 puntos de recompensa
+                    </strong>
+                    para repartir entre sus estadísticas.
+                </p>
+
+                <br>
+
+                <p>
+                    El jugador puede decidir cómo distribuir esos puntos
+                    de acuerdo con su evolución y estilo de juego.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 RECOMPENSAS INDIVIDUALES -->
+
+        <section class="reward-section reveal">
+
+            <span class="reward-number">
+                03 / ACTUACIONES
+            </span>
+
+            <h2>
+                NO TODO
+                <span>ES MARCAR.</span>
+            </h2>
+
+            <p>
+                Las recompensas también pueden otorgarse por acciones
+                que tengan un impacto significativo en el desarrollo
+                del partido.
+            </p>
+
+            <div class="reward-list">
+
+
+                <div class="reward-card">
+
+                    <h3>
+                        Asistencia decisiva
+                    </h3>
+
+                    <span class="amount">
+                        +5 PTS
+                    </span>
+
+                    <p>
+                        Un pase que genere directamente una ocasión
+                        que termine en gol.
+                    </p>
+
+                </div>
+
+
+                <div class="reward-card">
+
+                    <h3>
+                        Atajada decisiva
+                    </h3>
+
+                    <span class="amount">
+                        +5 PTS
+                    </span>
+
+                    <p>
+                        Una intervención de arquero que evite un gol
+                        en una situación clara o decisiva.
+                    </p>
+
+                </div>
+
+
+                <div class="reward-card">
+
+                    <h3>
+                        Intervención defensiva
+                    </h3>
+
+                    <span class="amount">
+                        +5 PTS
+                    </span>
+
+                    <p>
+                        Una acción defensiva especialmente importante
+                        que cambie el desarrollo de una jugada.
+                    </p>
+
+                </div>
+
+
+                <div class="reward-card">
+
+                    <h3>
+                        Actuación destacada
+                    </h3>
+
+                    <span class="amount">
+                        +5 PTS
+                    </span>
+
+                    <p>
+                        Recompensa otorgada por el Staff cuando un
+                        jugador tiene una actuación extraordinaria
+                        aunque no encaje en una recompensa específica.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 TABLA -->
+
+        <section class="reward-section reveal">
+
+            <span class="reward-number">
+                04 / RESUMEN
+            </span>
+
+            <h2>
+                TABLA DE
+                <span>RECOMPENSAS.</span>
+            </h2>
+
+            <table class="reward-table">
+
+                <thead>
+
+                    <tr>
+                        <th>
+                            ACCIÓN
+                        </th>
+
+                        <th>
+                            POSICIÓN
+                        </th>
+
+                        <th>
+                            RECOMPENSA
+                        </th>
+
+                        <th>
+                            DISTRIBUCIÓN
+                        </th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Gol
+                        </td>
+
+                        <td>
+                            FW / cualquier jugador que marque
+                        </td>
+
+                        <td class="value">
+                            +10
+                        </td>
+
+                        <td>
+                            Libre entre estadísticas permitidas.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Asistencia decisiva
+                        </td>
+
+                        <td>
+                            MF / jugador que genere la asistencia
+                        </td>
+
+                        <td class="value">
+                            +5
+                        </td>
+
+                        <td>
+                            Libre entre estadísticas.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Atajada decisiva
+                        </td>
+
+                        <td>
+                            GK
+                        </td>
+
+                        <td class="value">
+                            +5
+                        </td>
+
+                        <td>
+                            Libre entre estadísticas de GK.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Intervención defensiva
+                        </td>
+
+                        <td>
+                            DF
+                        </td>
+
+                        <td class="value">
+                            +5
+                        </td>
+
+                        <td>
+                            Libre entre estadísticas.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Actuación destacada
+                        </td>
+
+                        <td>
+                            Cualquier posición
+                        </td>
+
+                        <td class="value">
+                            +5
+                        </td>
+
+                        <td>
+                            Determinada por el Staff.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- 05 LIGA -->
+
+        <section class="reward-section reveal">
+
+            <span class="reward-number">
+                05 / RECOMPENSAS DE LIGA
+            </span>
+
+            <h2>
+                GANAR LA LIGA
+                <span>TIENE CONSECUENCIAS.</span>
+            </h2>
+
+            <p>
+                La Liga no solamente determina qué equipo consiguió
+                imponerse sobre los demás. El campeón también obtiene
+                una recompensa colectiva que representa el crecimiento
+                conseguido durante la competición.
+            </p>
+
+
+            <div class="league-reward">
+
+                <div class="big">
+                    +50
+                </div>
+
+                <h3>
+                    RECOMPENSA DEL CAMPEÓN
+                </h3>
+
+                <p>
+                    El equipo que consiga ganar la Liga recibe hasta
+                    <strong class="highlight">
+                        50 puntos de recompensa
+                    </strong>
+                    para repartir entre sus jugadores.
+                </p>
+
+                <br>
+
+                <p>
+                    Estos puntos representan el beneficio colectivo
+                    obtenido por haber conseguido el campeonato.
+                </p>
+
+            </div>
+
+
+            <div class="league-grid">
+
+
+                <div class="league-card">
+
+                    <h3>
+                        CAMPEÓN
+                    </h3>
+
+                    <div class="points">
+                        +50
+                    </div>
+
+                    <p>
+                        Recompensa máxima para el equipo ganador
+                        de la Liga.
+                    </p>
+
+                </div>
+
+
+                <div class="league-card">
+
+                    <h3>
+                        EQUIPO
+                    </h3>
+
+                    <div class="points">
+                        COLECTIVO
+                    </div>
+
+                    <p>
+                        La recompensa pertenece al equipo y debe
+                        distribuirse entre sus integrantes.
+                    </p>
+
+                </div>
+
+
+                <div class="league-card">
+
+                    <h3>
+                        DISTRIBUCIÓN
+                    </h3>
+
+                    <div class="points">
+                        LIBRE
+                    </div>
+
+                    <p>
+                        El equipo puede decidir cómo repartir los
+                        puntos según las reglas establecidas por
+                        el Staff.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 REPARTO -->
+
+        <section class="reward-section reveal">
+
+            <span class="reward-number">
+                06 / DISTRIBUCIÓN
+            </span>
+
+            <h2>
+                ¿CÓMO SE
+                <span>REPARTEN?</span>
+            </h2>
+
+            <div class="distribution">
+
+                <h3>
+                    Puntos para estadísticas
+                </h3>
+
+                <p>
+                    Los puntos obtenidos mediante recompensas pueden
+                    utilizarse para mejorar las estadísticas del jugador.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Los puntos pueden dividirse entre diferentes
+                        estadísticas.
+                    </li>
+
+                    <li>
+                        También pueden concentrarse en una sola estadística,
+                        siempre que las reglas de esa recompensa lo permitan.
+                    </li>
+
+                    <li>
+                        Los jugadores deben respetar las estadísticas
+                        correspondientes a su posición.
+                    </li>
+
+                    <li>
+                        En el caso de los arqueros, los puntos solamente
+                        pueden distribuirse entre sus estadísticas de GK.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07 STAFF -->
+
+        <section class="reward-section reveal">
+
+            <span class="reward-number">
+                07 / CRITERIO
+            </span>
+
+            <h2>
+                EL STAFF
+                <span>DECIDE.</span>
+            </h2>
+
+            <div class="staff-box">
+
+                <h3>
+                    Recompensas especiales
+                </h3>
+
+                <p>
+                    No todas las actuaciones extraordinarias pueden
+                    ser reducidas a una tabla.
+                </p>
+
+                <p>
+                    El Staff puede otorgar recompensas adicionales
+                    cuando un jugador realiza una acción especialmente
+                    importante, demuestra una evolución destacada,
+                    decide un partido o protagoniza un momento
+                    significativo dentro de la historia.
+                </p>
+
+                <p>
+                    Estas recompensas no son automáticas y deben ser
+                    justificadas por la importancia de la actuación
+                    dentro del rol.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+
+        <section class="final-reward reveal">
+
+            <h2>
+                GANAR ES BUENO.
+                <span>EVOLUCIONAR ES MEJOR.</span>
+            </h2>
+
+            <p>
+                Las recompensas están diseñadas para premiar el rendimiento
+                y hacer que las actuaciones importantes tengan consecuencias
+                permanentes sobre el desarrollo de cada jugador.
+            </p>
+
+            <br>
+
+            <p>
+                Un gol puede mejorar a un delantero. Una atajada puede
+                fortalecer a un arquero. Una asistencia puede impulsar
+                a un mediocampista. Una intervención defensiva puede
+                hacer crecer a un defensor.
+            </p>
+
+            <br>
+
+            <p>
+                Y cuando un equipo consigue conquistar la Liga, los
+                jugadores que lo hicieron posible pueden recibir una
+                recompensa colectiva de hasta <strong class="highlight">
+                +50 puntos</strong>.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <b>© STRIKER//GEN</b>
+
+        <span>
+            CREATE YOUR EGO. BUILD YOUR LEGACY.
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

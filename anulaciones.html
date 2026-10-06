@@ -1,0 +1,1227 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ANULACIONES | STRIKER//GEN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ========================================
+           ANULACIONES
+        ======================================== */
+
+        .anulacion-intro {
+            max-width: 850px;
+            margin-bottom: 55px;
+        }
+
+        .anulacion-intro h2 {
+            font:
+                900 clamp(42px, 6vw, 75px) / .9
+                'Barlow Condensed';
+
+            margin-bottom: 20px;
+        }
+
+        .anulacion-intro h2 span {
+            color: var(--red);
+        }
+
+        .anulacion-intro p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.85;
+        }
+
+        .anulacion-section {
+            margin: 55px 0;
+        }
+
+        .anulacion-section > h2 {
+            font:
+                900 clamp(38px, 5vw, 65px) / .9
+                'Barlow Condensed';
+
+            letter-spacing: -1px;
+
+            margin-bottom: 12px;
+        }
+
+        .anulacion-section > h2 span {
+            color: var(--accent);
+        }
+
+        .section-number {
+            display: block;
+
+            color: var(--red);
+
+            font:
+                800 11px
+                'Barlow Condensed';
+
+            letter-spacing: 3px;
+
+            margin-bottom: 8px;
+        }
+
+        .anulacion-box {
+            border: 1px solid var(--line);
+
+            border-left: 3px solid var(--red);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(20, 26, 35, .95),
+                    rgba(10, 14, 20, .95)
+                );
+
+            padding: 30px;
+
+            margin: 20px 0;
+        }
+
+        .anulacion-box h3 {
+            font:
+                800 30px
+                'Barlow Condensed';
+
+            margin-bottom: 12px;
+        }
+
+        .anulacion-box p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 12px;
+        }
+
+        .anulacion-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .concept {
+            color: var(--accent);
+            font-weight: 800;
+        }
+
+        .danger {
+            color: var(--red);
+            font-weight: 800;
+        }
+
+        .blue {
+            color: var(--blue);
+            font-weight: 800;
+        }
+
+        .example {
+            margin-top: 22px;
+
+            padding: 22px;
+
+            background: #090d12;
+
+            border: 1px solid rgba(255, 255, 255, .08);
+
+            border-left: 2px solid var(--blue);
+        }
+
+        .example-title {
+            color: var(--blue);
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+            font-weight: 900;
+
+            margin-bottom: 15px;
+        }
+
+        .example p {
+            margin-bottom: 10px;
+        }
+
+        .post {
+            padding: 14px 16px;
+
+            margin: 8px 0;
+
+            background: #0d1218;
+
+            border: 1px solid rgba(255, 255, 255, .06);
+
+            color: #cdd3db;
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+        .post strong {
+            color: white;
+        }
+
+        .result {
+            margin-top: 15px;
+
+            padding: 14px 16px;
+
+            background:
+                rgba(216, 255, 62, .06);
+
+            border-left: 2px solid var(--accent);
+
+            color: #dce2e8;
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+        .result strong {
+            color: var(--accent);
+        }
+
+        .rule-list {
+            margin-top: 18px;
+
+            padding-left: 20px;
+        }
+
+        .rule-list li {
+            margin-bottom: 10px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.75;
+        }
+
+        .timeline {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+        .time-card {
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+
+            padding: 25px;
+
+            position: relative;
+        }
+
+        .time-card::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background: var(--accent);
+        }
+
+        .time-card h3 {
+            font:
+                800 30px
+                'Barlow Condensed';
+
+            margin-bottom: 8px;
+        }
+
+        .time-card span {
+            color: var(--accent);
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+            font-weight: 800;
+        }
+
+        .time-card p {
+            margin-top: 14px;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+        .comparison {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 14px;
+
+            margin-top: 25px;
+        }
+
+        .comparison-box {
+            padding: 25px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+        }
+
+        .comparison-box.good {
+            border-top: 2px solid var(--accent);
+        }
+
+        .comparison-box.bad {
+            border-top: 2px solid var(--red);
+        }
+
+        .comparison-box h3 {
+            font:
+                800 27px
+                'Barlow Condensed';
+
+            margin-bottom: 12px;
+        }
+
+        .comparison-box p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.75;
+        }
+
+        .staff-box {
+            margin-top: 25px;
+
+            padding: 30px;
+
+            border: 1px solid rgba(216, 255, 62, .2);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(216, 255, 62, .05),
+                    rgba(13, 17, 24, .95)
+                );
+        }
+
+        .staff-box h3 {
+            font:
+                800 32px
+                'Barlow Condensed';
+
+            color: var(--accent);
+
+            margin-bottom: 10px;
+        }
+
+        .staff-box p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+        .final-warning {
+            margin-top: 60px;
+
+            padding: 35px;
+
+            border: 1px solid rgba(255, 49, 81, .3);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 49, 81, .07),
+                    rgba(10, 13, 18, .95)
+                );
+        }
+
+        .final-warning h2 {
+            font:
+                900 42px
+                'Barlow Condensed';
+
+            color: var(--red);
+
+            margin-bottom: 12px;
+        }
+
+        .final-warning p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+        }
+
+        @media (max-width: 700px) {
+
+            .timeline,
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            .anulacion-box,
+            .staff-box,
+            .final-warning {
+                padding: 22px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+        ☰
+    </button>
+
+    <nav class="menu" id="menu">
+
+        <div class="menu-header">
+            <b>STRIKER//GEN</b>
+            <small>FOOTBALL ROLE PROJECT</small>
+        </div>
+
+        <div class="menu-label">PRINCIPAL</div>
+
+        <a href="index.html">Inicio</a>
+        <a href="guia.html">Guía de principiantes</a>
+
+        <div class="menu-label">SISTEMAS</div>
+
+        <a href="sistemas.html">Todos los sistemas</a>
+        <a href="stats.html">Estadísticas</a>
+        <a href="entrenamiento.html">Entrenamiento</a>
+        <a href="duelos.html">Duelos</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="despertar.html">Despertar</a>
+        <a href="flujo.html">Flujo</a>
+        <a href="evolucion.html">Evolución</a>
+        <a href="cansancio.html">Cansancio</a>
+
+        <div class="menu-label">COMPETICIÓN</div>
+
+        <a href="liga.html">Liga</a>
+
+        <div class="menu-label">ÉLITE</div>
+
+        <a href="golden.html">New Golden Generation</a>
+
+    </nav>
+
+
+    <header class="hero">
+
+        <div class="hero-inner">
+
+            <a class="back" href="guia.html">
+                ← VOLVER A LA GUÍA
+            </a>
+
+            <p class="kicker">
+                STRIKER//GEN / REGLAMENTO TÉCNICO
+            </p>
+
+            <h1>
+                ANULACIONES
+            </h1>
+
+            <p>
+                Sistema destinado a controlar la precisión narrativa,
+                las acciones de los jugadores y el correcto desarrollo
+                de los enfrentamientos dentro del rol técnico.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main class="page">
+
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="anulacion-intro reveal">
+
+            <h2>
+                PRECISIÓN ANTES QUE
+                <span>INTERPRETACIÓN.</span>
+            </h2>
+
+            <p>
+                STRIKER//GEN es un rol técnico. Esto significa que las
+                acciones realizadas por los jugadores deben ser claras,
+                coherentes y suficientemente específicas para que puedan
+                ser interpretadas de manera correcta por los participantes
+                y por el Staff.
+            </p>
+
+            <br>
+
+            <p>
+                Las anulaciones existen para evitar que una acción incompleta,
+                una interpretación forzada o una manipulación indebida
+                determine injustamente el resultado de una jugada.
+            </p>
+
+        </section>
+
+
+        <!-- 01 -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                01 / CONCEPTO GENERAL
+            </span>
+
+            <h2>
+                ¿QUÉ ES UNA <span>ANULACIÓN?</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <p>
+                    Una anulación es una herramienta utilizada cuando una
+                    acción realizada dentro de un post no cumple con las
+                    condiciones necesarias para ser considerada válida.
+                </p>
+
+                <p>
+                    Dependiendo del caso, la consecuencia puede ser la
+                    anulación de una acción concreta, una parte determinada
+                    del post o, en situaciones más graves, la anulación
+                    directa del post.
+                </p>
+
+                <p>
+                    Las anulaciones no sustituyen automáticamente una
+                    resolución por ruleta. En determinadas situaciones,
+                    una acción puede quedar definida directamente por
+                    una anulación.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02 MANO BLANCA -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                02 / ANULACIONES TÉCNICAS
+            </span>
+
+            <h2>
+                <span>MANO BLANCA</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <h3>
+                    Falta de especificación
+                </h3>
+
+                <p>
+                    La <span class="concept">Mano Blanca</span> ocurre cuando
+                    un jugador realiza una acción pero deja sin especificar
+                    un elemento importante de la misma.
+                </p>
+
+                <p>
+                    En lugar de asumir que el jugador realizó la acción
+                    de la mejor manera posible, el rival puede señalar
+                    la falta de información y establecer una interpretación
+                    válida dentro de los límites de lo escrito.
+                </p>
+
+                <p>
+                    Si esa falta de especificación elimina la necesidad
+                    de realizar el duelo correspondiente, la resolución
+                    puede producirse directamente mediante la Mano Blanca,
+                    sin necesidad de utilizar una ruleta.
+                </p>
+
+
+                <div class="example">
+
+                    <div class="example-title">
+                        EJEMPLO DE MANO BLANCA
+                    </div>
+
+                    <div class="post">
+                        <strong>Jugador A:</strong><br>
+                        "Corro en línea recta hacia el balón."
+                    </div>
+
+                    <div class="post">
+                        <strong>Jugador B:</strong><br>
+                        "Como no especificás la velocidad con la que corrés,
+                        voy a considerar que lo hacés a la mínima velocidad
+                        posible."
+                    </div>
+
+                    <div class="result">
+                        <strong>Resolución:</strong><br>
+                        La velocidad utilizada por el Jugador A queda
+                        determinada por la falta de especificación.
+                        Si el duelo debía resolverse mediante una ruleta,
+                        la Mano Blanca puede determinar directamente
+                        la situación a favor del Jugador B.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="comparison">
+
+                <div class="comparison-box good">
+
+                    <h3>
+                        Acción específica
+                    </h3>
+
+                    <p>
+                        El jugador establece claramente qué hace,
+                        cómo lo hace y los elementos necesarios para
+                        interpretar correctamente su acción.
+                    </p>
+
+                </div>
+
+                <div class="comparison-box bad">
+
+                    <h3>
+                        Acción incompleta
+                    </h3>
+
+                    <p>
+                        El jugador deja elementos importantes sin definir
+                        y permite que una parte fundamental de la acción
+                        quede abierta a interpretación.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 POSICIONAMIENTO -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                03 / POSICIONAMIENTO
+            </span>
+
+            <h2>
+                EL <span>POSICIONAMIENTO</span>
+                ES OBLIGATORIO
+            </h2>
+
+            <div class="anulacion-box">
+
+                <p>
+                    En un rol técnico, no alcanza con describir únicamente
+                    lo que el personaje intenta hacer. También debe quedar
+                    claro dónde se encuentra y cómo se desplaza dentro
+                    del campo.
+                </p>
+
+                <p>
+                    El posicionamiento debe estar presente desde el inicio
+                    de la jugada y mantenerse actualizado mediante los
+                    desplazamientos realizados a través de las diferentes
+                    acciones.
+                </p>
+
+                <ul class="rule-list">
+
+                    <li>
+                        Debe indicarse el <span class="concept">
+                        posicionamiento inicial</span>.
+                    </li>
+
+                    <li>
+                        Deben indicarse los desplazamientos realizados
+                        durante la jugada.
+                    </li>
+
+                    <li>
+                        Debe quedar claro dónde termina el jugador después
+                        de una acción relevante.
+                    </li>
+
+                    <li>
+                        No se debe asumir que el jugador se trasladó
+                        automáticamente de una posición a otra.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="anulacion-box">
+
+                <h3>
+                    Falta de posicionamiento
+                </h3>
+
+                <p>
+                    No indicar el posicionamiento o el traslado del jugador
+                    constituye una falta técnica.
+                </p>
+
+                <p>
+                    Si un jugador no especifica su ubicación inicial,
+                    sus desplazamientos o la posición que ocupa durante
+                    el desarrollo de la jugada, puede producirse una
+                    <span class="danger">anulación directa del post</span>.
+                </p>
+
+            </div>
+
+
+            <div class="example">
+
+                <div class="example-title">
+                    EJEMPLO
+                </div>
+
+                <div class="post">
+                    <strong>Jugador A:</strong><br>
+                    "Recibo la pelota, avanzo y busco superar al defensor."
+                </div>
+
+                <div class="result">
+                    <strong>Problema:</strong><br>
+                    No se establece desde dónde recibe, hacia dónde
+                    se desplaza ni cuál es su posicionamiento durante
+                    el avance. La acción no proporciona la información
+                    técnica necesaria para continuar la jugada.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 MANO NEGRA -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                04 / MANIPULACIÓN
+            </span>
+
+            <h2>
+                <span>MANO NEGRA</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <h3>
+                    Manipulación de rivales
+                </h3>
+
+                <p>
+                    La <span class="danger">Mano Negra</span> ocurre cuando
+                    un jugador intenta controlar, determinar o establecer
+                    las acciones de un jugador rival.
+                </p>
+
+                <p>
+                    Un jugador no puede decidir qué hace un oponente,
+                    cómo reacciona, hacia dónde se mueve o qué acción
+                    realiza.
+                </p>
+
+                <p>
+                    Cualquier mención o manipulación de una acción rival
+                    que implique decidir su comportamiento puede provocar
+                    una anulación directa de la parte correspondiente
+                    del post.
+                </p>
+
+            </div>
+
+
+            <div class="example">
+
+                <div class="example-title">
+                    EJEMPLO DE MANO NEGRA
+                </div>
+
+                <div class="post">
+                    <strong>Jugador A:</strong><br>
+                    "Corro hacia el defensor, lo dejo atrás y él no consigue
+                    reaccionar a tiempo."
+                </div>
+
+                <div class="result">
+                    <strong>Problema:</strong><br>
+                    El Jugador A está determinando la reacción y el resultado
+                    de la acción del rival. No puede decidir por el defensor
+                    que "no consigue reaccionar".
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 05 MANIPULACIÓN DE ALIADOS -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                05 / CONTROL DE ALIADOS
+            </span>
+
+            <h2>
+                MANIPULACIÓN DE
+                <span>ALIADOS</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <p>
+                    En STRIKER//GEN existe una excepción importante:
+                    el jugador que posee la pelota tiene la posibilidad
+                    de manipular las acciones de sus <span class="concept">
+                    aliados</span>.
+                </p>
+
+                <p>
+                    Esto permite que el jugador que lleva la pelota pueda
+                    coordinar determinadas acciones con sus compañeros
+                    y, de esta manera, conducir la jugada y organizar
+                    al equipo.
+                </p>
+
+                <p>
+                    Esta capacidad se limita exclusivamente a los
+                    <span class="concept">jugadores aliados</span>.
+                    Nunca permite controlar las acciones de un rival.
+                </p>
+
+            </div>
+
+
+            <div class="example">
+
+                <div class="example-title">
+                    EJEMPLO VÁLIDO
+                </div>
+
+                <div class="post">
+                    <strong>Jugador A:</strong><br>
+                    "Con la pelota bajo control, avanzo por el sector
+                    derecho mientras le indico a mi compañero que se
+                    abra hacia la banda para generar una línea de pase."
+                </div>
+
+                <div class="result">
+                    <strong>Válido:</strong><br>
+                    El jugador está coordinando una acción de un compañero
+                    aliado para desarrollar la jugada.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 SOBRE MANIPULACIÓN -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                06 / LÍMITES
+            </span>
+
+            <h2>
+                <span>SOBRE-MANIPULACIÓN</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <h3>
+                    Tener control no significa tener control absoluto
+                </h3>
+
+                <p>
+                    La posibilidad de manipular aliados no significa que
+                    el jugador pueda controlar cada movimiento, reacción
+                    y acción de sus compañeros.
+                </p>
+
+                <p>
+                    La manipulación debe mantenerse dentro de un margen
+                    razonable y coherente con una acción de juego.
+                </p>
+
+                <p>
+                    Realizar una cantidad excesiva de movimientos sobre
+                    un compañero, determinar múltiples acciones consecutivas
+                    o utilizar a un aliado como si fuera una extensión
+                    completamente controlable del propio personaje puede
+                    considerarse <span class="danger">
+                    sobre-manipulación</span>.
+                </p>
+
+            </div>
+
+
+            <div class="example">
+
+                <div class="example-title">
+                    EJEMPLO DE SOBRE-MANIPULACIÓN
+                </div>
+
+                <div class="post">
+                    <strong>Jugador A:</strong><br>
+                    "Mi compañero corre diez metros, cambia de dirección,
+                    esquiva a un rival, vuelve hacia atrás, recibe la pelota,
+                    hace un pase de primera y después se mueve nuevamente
+                    hacia el área."
+                </div>
+
+                <div class="result">
+                    <strong>Problema:</strong><br>
+                    Aunque el compañero sea aliado, se están determinando
+                    demasiadas acciones y movimientos de manera unilateral.
+                    Esto puede constituir sobre-manipulación.
+                </div>
+
+            </div>
+
+
+            <div class="staff-box">
+
+                <h3>
+                    Criterio del Staff
+                </h3>
+
+                <p>
+                    La determinación de cuándo una manipulación pasa a ser
+                    excesiva queda a criterio del Staff.
+                </p>
+
+                <p>
+                    El Staff evaluará el contexto de la jugada, la cantidad
+                    de acciones impuestas, su importancia dentro de la
+                    secuencia y si la manipulación respeta el funcionamiento
+                    técnico del rol.
+                </p>
+
+                <p>
+                    Si se considera que existe sobre-manipulación, podrá
+                    aplicarse una <span class="danger">
+                    anulación del post</span>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07 PLAZOS -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                07 / TIEMPO DE RESPUESTA
+            </span>
+
+            <h2>
+                PLAZOS DE <span>POSTEO</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <p>
+                    Cada jugador dispone de un tiempo determinado para
+                    responder a la jugada correspondiente.
+                </p>
+
+                <p>
+                    El plazo estándar es de <span class="concept">
+                    12 horas</span>.
+                </p>
+
+                <p>
+                    Este tiempo comienza a contar desde el momento
+                    correspondiente establecido para la continuación
+                    de la jugada.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="time-card">
+
+                    <span>
+                        PLAZO NORMAL
+                    </span>
+
+                    <h3>
+                        12 HORAS
+                    </h3>
+
+                    <p>
+                        Tiempo estándar disponible para realizar
+                        y enviar el post correspondiente.
+                    </p>
+
+                </div>
+
+
+                <div class="time-card">
+
+                    <span>
+                        CON EXTENSIÓN
+                    </span>
+
+                    <h3>
+                        24 HORAS
+                    </h3>
+
+                    <p>
+                        Puede solicitarse una extensión.
+                        El tiempo máximo permitido con extensión
+                        es de 24 horas.
+                    </p>
+
+                </div>
+
+
+                <div class="time-card">
+
+                    <span>
+                        FUERA DE PLAZO
+                    </span>
+
+                    <h3>
+                        NULO
+                    </h3>
+
+                    <p>
+                        Un post enviado después del plazo correspondiente
+                        se considera nulo.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="anulacion-box">
+
+                <h3>
+                    ¿Qué ocurre si no se postea?
+                </h3>
+
+                <p>
+                    Si el jugador no realiza su post dentro del tiempo
+                    establecido, la ausencia de respuesta también será
+                    considerada una situación nula.
+                </p>
+
+                <p>
+                    La extensión debe solicitarse dentro del período
+                    correspondiente. El límite absoluto establecido
+                    mediante extensión es de 24 horas.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 08 CONSECUENCIAS -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                08 / CONSECUENCIAS
+            </span>
+
+            <h2>
+                ¿QUÉ PUEDE SER <span>ANULADO?</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <p>
+                    No todas las infracciones producen necesariamente
+                    la misma consecuencia.
+                </p>
+
+                <ul class="rule-list">
+
+                    <li>
+                        Una <span class="concept">Mano Blanca</span> puede
+                        determinar directamente una situación cuando
+                        existe una falta de especificación.
+                    </li>
+
+                    <li>
+                        La falta de posicionamiento puede provocar
+                        una <span class="danger">anulación directa
+                        del post</span>.
+                    </li>
+
+                    <li>
+                        La <span class="danger">Mano Negra</span> provoca
+                        la anulación de la parte del post en la que
+                        se manipularon acciones rivales.
+                    </li>
+
+                    <li>
+                        La sobre-manipulación de aliados puede provocar
+                        la <span class="danger">anulación del post</span>,
+                        según el criterio del Staff.
+                    </li>
+
+                    <li>
+                        Un post enviado fuera del límite de tiempo
+                        correspondiente se considera <span class="danger">
+                        nulo</span>.
+                    </li>
+
+                    <li>
+                        La ausencia de post dentro del plazo establecido
+                        también genera una situación nula.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- 09 PRINCIPIOS -->
+
+        <section class="anulacion-section reveal">
+
+            <span class="section-number">
+                09 / PRINCIPIOS DEL ROL
+            </span>
+
+            <h2>
+                ROL <span>TÉCNICO</span>
+            </h2>
+
+            <div class="anulacion-box">
+
+                <p>
+                    STRIKER//GEN utiliza un sistema de <span class="concept">
+                    rol técnico</span>. La precisión de los posts es
+                    fundamental para que las jugadas puedan desarrollarse
+                    correctamente.
+                </p>
+
+                <p>
+                    El jugador debe describir sus propias acciones,
+                    mantener actualizado su posicionamiento y respetar
+                    los límites establecidos sobre la manipulación
+                    de personajes.
+                </p>
+
+                <p>
+                    El objetivo de las anulaciones no es castigar la
+                    creatividad, sino evitar que una acción poco definida
+                    o técnicamente incorrecta genere una ventaja que
+                    no debería existir.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+
+        <section class="final-warning reveal">
+
+            <h2>
+                PRECISIÓN.
+            </h2>
+
+            <p>
+                En STRIKER//GEN, lo que no se especifica correctamente
+                puede tener consecuencias dentro de la jugada. Escriba
+                sus acciones de manera clara, mantenga su posicionamiento
+                actualizado, respete los límites de manipulación y
+                recuerde los plazos establecidos.
+            </p>
+
+            <br>
+
+            <p>
+                El Staff tendrá la autoridad para interpretar y aplicar
+                estas reglas cuando una situación no pueda resolverse
+                únicamente mediante las normas descritas.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <b>© STRIKER//GEN</b>
+
+        <span>
+            CREATE YOUR EGO. BUILD YOUR LEGACY.
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

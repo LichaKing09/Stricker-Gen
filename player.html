@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Golden Player | STRIKER//GEN</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+        ☰
+    </button>
+
+
+    <!-- ================================
+         MENÚ
+    ================================= -->
+
+    <nav class="menu" id="menu">
+
+        <div class="menu-header">
+            <b>STRIKER//GEN</b>
+            <small>FOOTBALL ROLE PROJECT</small>
+        </div>
+
+        <div class="menu-label">
+            PRINCIPAL
+        </div>
+
+        <a href="index.html">
+            🏠 Inicio
+        </a>
+
+        <a href="guia.html">
+            📖 Guía de principiantes
+        </a>
+
+
+        <div class="menu-label">
+            SISTEMAS
+        </div>
+
+        <a href="sistemas.html">
+            ⚙️ Todos los sistemas
+        </a>
+
+        <a href="stats.html">
+            📊 Estadísticas
+        </a>
+
+        <a href="entrenamiento.html">
+            🏋️ Entrenamiento
+        </a>
+
+        <a href="duelos.html">
+            ⚽ Duelos
+        </a>
+
+        <a href="habilidades.html">
+            ⭐ Habilidades
+        </a>
+
+        <a href="despertar.html">
+            🔥 Despertar
+        </a>
+
+        <a href="flujo.html">
+            ⚡ Flujo
+        </a>
+
+        <a href="evolucion.html">
+            📈 Evolución
+        </a>
+
+        <a href="cansancio.html">
+            😮‍💨 Cansancio
+        </a>
+
+
+        <div class="menu-label">
+            COMPETICIÓN
+        </div>
+
+        <a href="liga.html">
+            🏆 Liga
+        </a>
+
+
+        <div class="menu-label">
+            ÉLITE
+        </div>
+
+        <a href="golden.html">
+            🌟 New Golden Generation
+        </a>
+
+    </nav>
+
+
+    <!-- ================================
+         PERFIL DEL JUGADOR
+    ================================= -->
+
+    <main class="page">
+
+        <a class="back" href="golden.html">
+            ← VOLVER A GOLDEN GENERATION
+        </a>
+
+
+        <section class="profile">
+
+
+            <!-- IMAGEN -->
+
+            <div class="profile-art">
+
+                <img
+                    id="playerImage"
+                    src=""
+                    alt="Jugador"
+                >
+
+            </div>
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="profile-info">
+
+                <p class="kicker">
+                    GOLDEN GENERATION
+                </p>
+
+                <h1 id="name">
+                    JUGADOR
+                </h1>
+
+                <p>
+                    Ficha del jugador. Esta página queda preparada para
+                    añadir posteriormente imagen, stats, habilidades,
+                    despertar, flujo y forma.
+                </p>
+
+
+                <!-- MINI ESTADÍSTICAS -->
+
+                <div class="mini-grid">
+
+
+                    <div class="mini">
+
+                        <b id="pos">
+                            -
+                        </b>
+
+                        <span>
+                            POSICIÓN
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini">
+
+                        <b id="country">
+                            -
+                        </b>
+
+                        <span>
+                            PAÍS
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini">
+
+                        <b>
+                            80
+                        </b>
+
+                        <span>
+                            STATS INICIALES
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini">
+
+                        <b>
+                            GOLDEN
+                        </b>
+
+                        <span>
+                            CLASIFICACIÓN
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <b>
+            STRIKER//GEN
+        </b>
+
+        <span>
+            CREATE YOUR EGO. BUILD YOUR LEGACY.
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <!-- ================================
+         BASE DE DATOS DE JUGADORES
+    ================================= -->
+
+    <script>
+
+        const p = [
+
+            // ============================
+            // GK
+            // ============================
+
+            [
+                '01',
+                'Genzo Wakabayashi',
+                'Japón',
+                'GK',
+                'Wakabayashi.jpeg'
+            ],
+
+            [
+                '02',
+                'Gino Hernandez',
+                'Italia',
+                'GK',
+                'GH.jpeg'
+            ],
+
+            [
+                '03',
+                'Deuter Müller',
+                'Alemania',
+                'GK',
+                'Muller.jpeg'
+            ],
+
+            [
+                '04',
+                'Gin Gagamaru',
+                'Japón',
+                'GK',
+                'GG.jpeg'
+            ],
+
+
+            // ============================
+            // DF
+            // ============================
+
+            [
+                '05',
+                'Don Lorenzo',
+                'Italia',
+                'DF',
+                'Don menso.jpeg'
+            ],
+
+            [
+                '06',
+                'Oliver Aiku',
+                'Japón',
+                'DF',
+                'Oliver Aiku.jpeg'
+            ],
+
+            [
+                '07',
+                'Galvan',
+                'Argentina',
+                'DF',
+                'Galvan.jpeg'
+            ],
+
+            [
+                '08',
+                'Hikaru Matsuyama',
+                'Japón',
+                'DF',
+                'Matsuyama.jpeg'
+            ],
+
+
+            // ============================
+            // MF
+            // ============================
+
+            [
+                '09',
+                'Sae Itoshi',
+                'Japón',
+                'MF',
+                'Pingoshi Sae.jpeg'
+            ],
+
+            [
+                '10',
+                'Tsubasa Ozora',
+                'Japón',
+                'MF',
+                'Tsubasa.jpeg'
+            ],
+
+            [
+                '11',
+                'Juan Díaz',
+                'Argentina',
+                'MF',
+                'Juan Diaz.jpeg'
+            ],
+
+            [
+                '12',
+                'Isagi Yoichi',
+                'Japón',
+                'FW',
+                'isagi.jpeg'
+            ],
+
+            [
+                '13',
+                'Taro Misaki',
+                'Japón',
+                'MF',
+                'Misako.jpeg'
+            ],
+
+            [
+                '14',
+                'Hugo Vivien',
+                'Francia',
+                'MF',
+                'Hugo.jpeg'
+            ],
+
+
+            // ============================
+            // FW
+            // ============================
+
+            [
+                '15',
+                'Michael Kaiser',
+                'Alemania',
+                'FW',
+                'Kaiser.jpeg'
+            ],
+
+            [
+                '16',
+                'Jun Misugi',
+                'Japón',
+                'FW',
+                'Misugi.jpeg'
+            ],
+
+            [
+                '17',
+                'Karl Heinz Schneider',
+                'Alemania',
+                'FW',
+                'Schneider.jpeg'
+            ],
+
+            [
+                '18',
+                'Carlos Santana',
+                'Brasil',
+                'FW',
+                'Carlos Santana.jpeg'
+            ],
+
+            [
+                '19',
+                'Julian Loki',
+                'Francia',
+                'FW',
+                'Juliabn Loki.jpeg'
+            ],
+
+            [
+                '20',
+                'Bunny Iglesias',
+                'España',
+                'FW',
+                'Bunny Iglesia.jpeg'
+            ]
+
+        ];
+
+
+        // ================================
+        // OBTENER JUGADOR DE LA URL
+        // ================================
+
+        const id =
+            new URLSearchParams(location.search).get('name') || '01';
+
+
+        const x =
+            p.find(v => v[0] === id) || p[0];
+
+
+        // ================================
+        // MOSTRAR INFORMACIÓN
+        // ================================
+
+        document.getElementById('name').textContent =
+            x[1].toUpperCase();
+
+
+        document.getElementById('country').textContent =
+            x[2];
+
+
+        document.getElementById('pos').textContent =
+            x[3];
+
+
+        // ================================
+        // CARGAR IMAGEN
+        // ================================
+
+        document.getElementById('playerImage').src =
+            `imagenes/${x[4]}`;
+
+
+        document.getElementById('playerImage').alt =
+            x[1];
+
+    </script>
+
+</body>
+
+</html>
