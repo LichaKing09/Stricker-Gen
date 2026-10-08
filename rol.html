@@ -1634,4 +1634,2279 @@
 
 </body>
 
+</html><!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EXPLICACIÓN DE ROL | STRIKER//GEN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ========================================
+           EXPLICACIÓN DE ROL
+        ======================================== */
+
+        .role-intro {
+            max-width: 900px;
+            margin-bottom: 70px;
+        }
+
+        .role-intro h2 {
+            font:
+                900 clamp(45px, 7vw, 90px) / .85
+                'Barlow Condensed';
+
+            letter-spacing: -2px;
+            margin-bottom: 25px;
+        }
+
+        .role-intro h2 span {
+            color: var(--accent);
+        }
+
+        .role-intro p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.9;
+            max-width: 820px;
+        }
+
+        .role-section {
+            margin: 70px 0;
+        }
+
+        .role-number {
+            display: block;
+            color: var(--blue);
+
+            font:
+                800 10px
+                'Barlow Condensed';
+
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+        }
+
+        .role-section > h2 {
+            font:
+                900 clamp(40px, 5vw, 68px) / .9
+                'Barlow Condensed';
+
+            letter-spacing: -1px;
+            margin-bottom: 18px;
+        }
+
+        .role-section > h2 span {
+            color: var(--accent);
+        }
+
+        .role-section > p {
+            max-width: 850px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.85;
+        }
+
+
+        /* ========================================
+           CAJAS
+        ======================================== */
+
+        .role-box {
+            margin-top: 25px;
+
+            padding: 30px;
+
+            border: 1px solid var(--line);
+
+            border-left: 3px solid var(--blue);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(20, 27, 38, .96),
+                    rgba(9, 13, 18, .96)
+                );
+        }
+
+        .role-box h3 {
+            font:
+                800 32px
+                'Barlow Condensed';
+
+            margin-bottom: 12px;
+        }
+
+        .role-box p {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.85;
+            margin-bottom: 14px;
+        }
+
+        .role-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-blue {
+            color: var(--blue);
+            font-weight: 800;
+        }
+
+        .highlight-red {
+            color: var(--red);
+            font-weight: 800;
+        }
+
+        .highlight-green {
+            color: var(--accent);
+            font-weight: 800;
+        }
+
+
+        /* ========================================
+           PASOS
+        ======================================== */
+
+        .steps {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 30px;
+        }
+
+        .step {
+            padding: 28px;
+
+            border: 1px solid var(--line);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #141a23,
+                    #0c1117
+                );
+
+            position: relative;
+        }
+
+        .step::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 3px;
+
+            background: var(--blue);
+        }
+
+        .step:nth-child(2)::before {
+            background: var(--accent);
+        }
+
+        .step:nth-child(3)::before {
+            background: var(--red);
+        }
+
+        .step-number {
+            color: var(--accent);
+
+            font:
+                900 38px
+                'Barlow Condensed';
+
+            margin-bottom: 8px;
+        }
+
+        .step h3 {
+            font:
+                800 27px
+                'Barlow Condensed';
+
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.75;
+        }
+
+
+        /* ========================================
+           ESTRUCTURA DE POST
+        ======================================== */
+
+        .post-example {
+            margin-top: 25px;
+
+            border: 1px solid var(--line);
+
+            background: #090d12;
+        }
+
+        .post-header {
+            padding: 14px 20px;
+
+            border-bottom: 1px solid var(--line);
+
+            color: var(--accent);
+
+            font-size: 9px;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+        }
+
+        .post-body {
+            padding: 25px;
+        }
+
+        .post-line {
+            padding: 12px 15px;
+
+            margin-bottom: 8px;
+
+            border-left: 2px solid var(--blue);
+
+            background: #0d1218;
+
+            color: #cbd2da;
+
+            font-size: 12px;
+
+            line-height: 1.75;
+        }
+
+        .post-line:last-child {
+            margin-bottom: 0;
+        }
+
+        .post-line strong {
+            color: white;
+        }
+
+
+        /* ========================================
+           REGLAS
+        ======================================== */
+
+        .rule-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 14px;
+
+            margin-top: 30px;
+        }
+
+        .rule-card {
+            padding: 26px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+        }
+
+        .rule-card h3 {
+            font:
+                800 28px
+                'Barlow Condensed';
+
+            margin-bottom: 10px;
+        }
+
+        .rule-card p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.8;
+        }
+
+        .rule-card.good {
+            border-top: 2px solid var(--accent);
+        }
+
+        .rule-card.bad {
+            border-top: 2px solid var(--red);
+        }
+
+
+        /* ========================================
+           ACCIONES
+        ======================================== */
+
+        .action-table {
+            width: 100%;
+
+            border-collapse: collapse;
+
+            margin-top: 30px;
+        }
+
+        .action-table th,
+        .action-table td {
+            border-bottom: 1px solid var(--line);
+
+            padding: 17px;
+
+            text-align: left;
+
+            font-size: 12px;
+        }
+
+        .action-table th {
+            color: var(--accent);
+
+            font-size: 9px;
+
+            letter-spacing: 1.5px;
+        }
+
+        .action-table td {
+            color: var(--muted);
+
+            line-height: 1.6;
+        }
+
+        .action-table td:first-child {
+            color: #f4f6f8;
+
+            font-weight: 700;
+        }
+
+
+        /* ========================================
+           FICHA DE PARTIDO
+        ======================================== */
+
+        .match-sheet {
+            margin-top: 30px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+        }
+
+        .match-sheet-card {
+            padding: 28px;
+
+            border: 1px solid var(--line);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #141a23,
+                    #0c1117
+                );
+
+            position: relative;
+        }
+
+        .match-sheet-card::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 3px;
+
+            background: var(--accent);
+        }
+
+        .match-sheet-card:nth-child(2)::before {
+            background: var(--blue);
+        }
+
+        .match-sheet-card:nth-child(3)::before {
+            background: var(--red);
+        }
+
+        .match-sheet-card h3 {
+            font:
+                800 29px
+                'Barlow Condensed';
+
+            margin-bottom: 10px;
+        }
+
+        .match-sheet-card p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.8;
+        }
+
+
+        /* ========================================
+           ESTADO DEL POST
+        ======================================== */
+
+        .post-status {
+            margin-top: 30px;
+
+            padding: 28px;
+
+            border: 1px solid rgba(216, 255, 62, .2);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(216, 255, 62, .05),
+                    rgba(9, 13, 18, .95)
+                );
+        }
+
+        .post-status h3 {
+            font:
+                800 32px
+                'Barlow Condensed';
+
+            margin-bottom: 15px;
+        }
+
+        .post-status p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+
+            margin-bottom: 12px;
+        }
+
+        .post-status ul {
+            padding-left: 20px;
+        }
+
+        .post-status li {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 7px;
+        }
+
+        .post-status strong {
+            color: #f4f6f8;
+        }
+
+
+        /* ========================================
+           EJEMPLO DE ESTADO FINAL
+        ======================================== */
+
+        .status-example {
+            margin-top: 25px;
+
+            padding: 25px;
+
+            border: 1px solid var(--line);
+
+            background: #090d12;
+        }
+
+        .status-example-header {
+            padding-bottom: 12px;
+
+            margin-bottom: 15px;
+
+            border-bottom: 1px solid var(--line);
+
+            color: var(--accent);
+
+            font-size: 9px;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+        }
+
+        .status-line {
+            padding: 10px 14px;
+
+            margin-bottom: 7px;
+
+            background: #0d1218;
+
+            border-left: 2px solid var(--blue);
+
+            color: #cbd2da;
+
+            font-size: 11px;
+
+            line-height: 1.7;
+        }
+
+        .status-line:last-child {
+            margin-bottom: 0;
+        }
+
+        .status-line strong {
+            color: #f4f6f8;
+        }
+
+
+        /* ========================================
+           DUELOS
+        ======================================== */
+
+        .duel-flow {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 10px;
+
+            margin-top: 30px;
+        }
+
+        .duel-step {
+            padding: 22px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+
+            text-align: center;
+        }
+
+        .duel-step b {
+            display: block;
+
+            color: var(--accent);
+
+            font:
+                900 30px
+                'Barlow Condensed';
+
+            margin-bottom: 8px;
+        }
+
+        .duel-step span {
+            color: var(--muted);
+
+            font-size: 10px;
+
+            line-height: 1.5;
+        }
+
+
+        /* ========================================
+           POSICIONAMIENTO
+        ======================================== */
+
+        .position-box {
+            margin-top: 30px;
+
+            padding: 30px;
+
+            border: 1px solid rgba(52, 120, 255, .25);
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(52, 120, 255, .1),
+                    transparent 55%
+                ),
+                #0c1117;
+        }
+
+        .position-box h3 {
+            font:
+                800 34px
+                'Barlow Condensed';
+
+            margin-bottom: 12px;
+        }
+
+        .position-box p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 12px;
+        }
+
+
+        /* ========================================
+           MANIPULACIÓN
+        ======================================== */
+
+        .manipulation {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 30px;
+        }
+
+        .manipulation-card {
+            padding: 25px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+        }
+
+        .manipulation-card h3 {
+            font:
+                800 27px
+                'Barlow Condensed';
+
+            margin-bottom: 10px;
+        }
+
+        .manipulation-card p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.75;
+        }
+
+        .manipulation-card.ally {
+            border-top: 2px solid var(--accent);
+        }
+
+        .manipulation-card.enemy {
+            border-top: 2px solid var(--red);
+        }
+
+        .manipulation-card.staff {
+            border-top: 2px solid var(--blue);
+        }
+
+
+        /* ========================================
+           TIEMPOS
+        ======================================== */
+
+        .time-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
+            margin-top: 30px;
+        }
+
+        .time-card {
+            padding: 28px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+        }
+
+        .time-card h3 {
+            font:
+                900 40px
+                'Barlow Condensed';
+
+            color: var(--accent);
+
+            margin-bottom: 5px;
+        }
+
+        .time-card strong {
+            color: #f4f6f8;
+
+            font-size: 11px;
+
+            letter-spacing: 1px;
+        }
+
+        .time-card p {
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 1.7;
+
+            margin-top: 12px;
+        }
+
+
+        /* ========================================
+           CHECKLIST
+        ======================================== */
+
+        .checklist {
+            margin-top: 25px;
+
+            padding: 28px;
+
+            border: 1px solid var(--line);
+
+            background: #0d1218;
+        }
+
+        .checklist h3 {
+            font:
+                800 30px
+                'Barlow Condensed';
+
+            margin-bottom: 15px;
+        }
+
+        .checklist ul {
+            padding-left: 20px;
+        }
+
+        .checklist li {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* ========================================
+           FINAL
+        ======================================== */
+
+        .final-role {
+            margin-top: 80px;
+
+            padding: 45px;
+
+            border: 1px solid rgba(216, 255, 62, .25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(216, 255, 62, .05),
+                    rgba(10, 14, 19, .95)
+                );
+        }
+
+        .final-role h2 {
+            font:
+                900 clamp(42px, 6vw, 75px) / .85
+                'Barlow Condensed';
+
+            margin-bottom: 15px;
+        }
+
+        .final-role h2 span {
+            color: var(--accent);
+        }
+
+        .final-role p {
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.85;
+
+            max-width: 850px;
+        }
+
+
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+
+        @media (max-width: 900px) {
+
+            .match-sheet {
+                grid-template-columns: 1fr;
+            }
+
+            .steps,
+            .manipulation,
+            .time-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .duel-flow {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .rule-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+
+            .post-body,
+            .role-box,
+            .position-box,
+            .checklist,
+            .final-role {
+                padding: 22px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .duel-flow {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         BOTÓN MENÚ
+    ======================================== -->
+
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Abrir menú">
+
+        ☰
+
+    </button>
+
+
+    <!-- ========================================
+         MENÚ
+    ======================================== -->
+
+    <nav class="menu" id="menu">
+
+        <div class="menu-header">
+
+            <b>STRIKER//GEN</b>
+
+            <small>
+                FOOTBALL ROLE PROJECT
+            </small>
+
+        </div>
+
+
+        <div class="menu-label">
+            PRINCIPAL
+        </div>
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="guia.html">
+            Guía de principiantes
+        </a>
+
+
+        <div class="menu-label">
+            SISTEMAS
+        </div>
+
+        <a href="sistemas.html">
+            Todos los sistemas
+        </a>
+
+        <a href="stats.html">
+            Estadísticas
+        </a>
+
+        <a href="entrenamiento.html">
+            Entrenamiento
+        </a>
+
+        <a href="duelos.html">
+            Duelos
+        </a>
+
+        <a href="habilidades.html">
+            Habilidades
+        </a>
+
+        <a href="despertar.html">
+            Despertar
+        </a>
+
+        <a href="flujo.html">
+            Flujo
+        </a>
+
+        <a href="evolucion.html">
+            Evolución
+        </a>
+
+        <a href="cansancio.html">
+            Cansancio
+        </a>
+
+
+        <div class="menu-label">
+            COMPETICIÓN
+        </div>
+
+        <a href="liga.html">
+            Liga
+        </a>
+
+
+        <div class="menu-label">
+            ÉLITE
+        </div>
+
+        <a href="golden.html">
+            New Golden Generation
+        </a>
+
+    </nav>
+
+
+    <!-- ========================================
+         HERO
+    ======================================== -->
+
+    <header class="hero">
+
+        <div class="hero-inner">
+
+            <a
+                class="back"
+                href="guia.html">
+
+                ← VOLVER A LA GUÍA
+
+            </a>
+
+            <p class="kicker">
+                STRIKER//GEN / MANUAL DE ROL
+            </p>
+
+            <h1>
+                EXPLICACIÓN DE ROL
+            </h1>
+
+            <p>
+                Todo lo necesario para entender cómo escribir,
+                participar y desarrollar una jugada dentro de
+                STRIKER//GEN.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main class="page">
+
+
+        <!-- ========================================
+             INTRODUCCIÓN
+        ======================================== -->
+
+        <section class="role-intro reveal">
+
+            <h2>
+                USTED NO ESCRIBE
+                <span>EL RESULTADO.</span>
+            </h2>
+
+            <p>
+                STRIKER//GEN es un rol técnico. Cada jugador escribe
+                las acciones de su propio personaje y deja que el
+                desarrollo de la jugada determine qué ocurre después.
+            </p>
+
+            <br>
+
+            <p>
+                Rolear correctamente no significa escribir el post
+                más largo posible. Significa escribir de forma clara,
+                específica y coherente, dejando suficiente información
+                para que el resto de participantes pueda responder
+                sin tener que inventar lo que su personaje hizo.
+            </p>
+
+            <br>
+
+            <p>
+                La regla fundamental es sencilla:
+                <span class="highlight-green">
+                    usted controla a su personaje, no el resultado
+                    de la jugada.
+                </span>
+            </p>
+
+        </section>
+
+
+        <!-- ========================================
+             01 — CONCEPTO
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                01 / CONCEPTO
+            </span>
+
+            <h2>
+                ¿CÓMO SE <span>ROLEA?</span>
+            </h2>
+
+            <p>
+                Una jugada se construye mediante una sucesión de posts.
+                Cada jugador describe qué intenta hacer, dónde se
+                encuentra y cómo desarrolla su acción.
+            </p>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Posicionarse
+                    </h3>
+
+                    <p>
+                        Indique dónde se encuentra su personaje y,
+                        cuando corresponda, hacia dónde se desplaza.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Actuar
+                    </h3>
+
+                    <p>
+                        Describa la acción que intenta realizar:
+                        correr, pasar, regatear, tirar, defender,
+                        marcar, etc.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Resolver
+                    </h3>
+
+                    <p>
+                        Si la acción genera un enfrentamiento,
+                        se utiliza el sistema correspondiente para
+                        determinar el resultado.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             02 — ESTRUCTURA
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                02 / ESTRUCTURA
+            </span>
+
+            <h2>
+                UN POST <span>CORRECTO</span>
+            </h2>
+
+            <p>
+                Un buen post debe permitir que cualquier participante
+                pueda entender qué está haciendo su personaje sin
+                tener que completar información que usted no escribió.
+            </p>
+
+            <div class="post-example">
+
+                <div class="post-header">
+                    EJEMPLO DE POST
+                </div>
+
+                <div class="post-body">
+
+                    <div class="post-line">
+
+                        <strong>
+                            Posicionamiento:
+                        </strong>
+
+                        Me encuentro aproximadamente a cinco metros
+                        de la línea central, ubicado sobre el sector
+                        derecho del campo.
+
+                    </div>
+
+
+                    <div class="post-line">
+
+                        <strong>
+                            Desplazamiento:
+                        </strong>
+
+                        Comienzo a correr hacia adelante por el
+                        sector derecho, manteniendo mi posición
+                        dentro de la banda.
+
+                    </div>
+
+
+                    <div class="post-line">
+
+                        <strong>
+                            Acción:
+                        </strong>
+
+                        Al acercarme al defensor, reduzco la distancia
+                        y preparo mi cuerpo para intentar superar la
+                        marca mediante un regate.
+
+                    </div>
+
+
+                    <div class="post-line">
+
+                        <strong>
+                            Intención:
+                        </strong>
+
+                        Mi objetivo es superar al defensor y continuar
+                        la jugada hacia el área.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="role-box">
+
+                <h3>
+                    Lo importante
+                </h3>
+
+                <p>
+                    El ejemplo establece el lugar, el movimiento,
+                    la acción y la intención sin decidir qué hará
+                    el defensor.
+                </p>
+
+                <p>
+                    Eso permite que el rival responda y que el duelo
+                    se resuelva de forma justa.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             03 — FICHA DEL PARTIDO
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                03 / FICHA DEL PARTIDO
+            </span>
+
+            <h2>
+                LA FICHA CON LA QUE
+                <span>USTED JUGARÁ.</span>
+            </h2>
+
+            <p>
+                Antes de comenzar cada partido, todos los jugadores
+                deberán enviar su ficha actual al Staff. Esta ficha
+                será registrada como la ficha oficial con la que el
+                jugador disputará ese encuentro.
+            </p>
+
+
+            <div class="match-sheet">
+
+
+                <div class="match-sheet-card">
+
+                    <h3>
+                        ENVIAR LA FICHA
+                    </h3>
+
+                    <p>
+                        Antes del comienzo del partido, cada jugador
+                        deberá presentar su ficha completa con sus
+                        estadísticas, habilidades, pasivas y demás
+                        elementos correspondientes.
+                    </p>
+
+                </div>
+
+
+                <div class="match-sheet-card">
+
+                    <h3>
+                        FICHA FIJADA
+                    </h3>
+
+                    <p>
+                        Una vez iniciado el partido, la ficha enviada
+                        queda fijada para ese encuentro. Los jugadores
+                        deberán utilizar esas estadísticas y habilidades
+                        durante todo el partido.
+                    </p>
+
+                </div>
+
+
+                <div class="match-sheet-card">
+
+                    <h3>
+                        SIN CAMBIOS
+                    </h3>
+
+                    <p>
+                        No se permite cambiar las estadísticas,
+                        habilidades o características de la ficha
+                        durante el desarrollo del partido para obtener
+                        una ventaja.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="role-box">
+
+                <h3>
+                    Importante
+                </h3>
+
+                <p>
+                    La ficha utilizada durante el partido es la ficha
+                    registrada al inicio del encuentro.
+                </p>
+
+                <p>
+                    Si el jugador mejora sus estadísticas o modifica
+                    su ficha posteriormente, esos cambios podrán ser
+                    utilizados en futuros partidos, pero no podrán
+                    aplicarse retroactivamente al encuentro que ya
+                    comenzó.
+                </p>
+
+            </div>
+
+
+            <div class="post-status">
+
+                <h3>
+                    PARTIDOS OFICIALES
+                </h3>
+
+                <p>
+                    Durante un partido de carácter
+                    <strong>OFICIAL</strong>
+                    está completamente prohibido realizar entrenamientos.
+                </p>
+
+                <ul>
+
+                    <li>
+                        No se pueden realizar entrenamientos durante
+                        el partido.
+                    </li>
+
+                    <li>
+                        No se pueden obtener puntos de entrenamiento
+                        mientras el encuentro está en desarrollo.
+                    </li>
+
+                    <li>
+                        No se pueden modificar estadísticas mediante
+                        entrenamiento durante el encuentro.
+                    </li>
+
+                    <li>
+                        El jugador debe disputar el partido utilizando
+                        la ficha registrada al inicio.
+                    </li>
+
+                </ul>
+
+                <p style="margin-top: 15px;">
+                    El entrenamiento se realiza fuera del partido.
+                    Una vez finalizado el encuentro, el jugador podrá
+                    continuar con sus actividades de entrenamiento
+                    correspondientes.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             04 — ESTRUCTURA FINAL DEL POST
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                04 / ESTADO DEL POST
+            </span>
+
+            <h2>
+                CADA POST TERMINA CON
+                <span>SU ESTADO.</span>
+            </h2>
+
+            <p>
+                Al finalizar cada post durante un partido, el jugador
+                deberá colocar un pequeño registro con el estado actual
+                de su personaje. Esto permite que el Staff y los demás
+                jugadores puedan conocer rápidamente las estadísticas
+                utilizadas y las habilidades disponibles.
+            </p>
+
+
+            <div class="post-status">
+
+                <h3>
+                    DEBE MOSTRAR
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <strong>Stats actuales:</strong>
+                        las estadísticas que posee el jugador en ese
+                        momento del partido.
+                    </li>
+
+                    <li>
+                        <strong>Habilidades utilizadas:</strong>
+                        indicar qué habilidad fue utilizada durante
+                        el post, si se utilizó alguna.
+                    </li>
+
+                    <li>
+                        <strong>Cooldown:</strong>
+                        indicar el tiempo de cooldown restante de
+                        cada habilidad utilizada.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="status-example">
+
+                <div class="status-example-header">
+                    EJEMPLO DE ESTADO FINAL
+                </div>
+
+
+                <div class="status-line">
+
+                    <strong>
+                        STATS:
+                    </strong>
+
+                    Velocidad: 25 |
+                    Físico: 15 |
+                    Tiro: 30 |
+                    Pase: 20 |
+                    Regate: 25 |
+                    Visión: 20 |
+                    Defensa: 10
+
+                </div>
+
+
+                <div class="status-line">
+
+                    <strong>
+                        HABILIDAD UTILIZADA:
+                    </strong>
+
+                    「GAMBETA DEL MAGO」
+
+                </div>
+
+
+                <div class="status-line">
+
+                    <strong>
+                        COOLDOWN:
+                    </strong>
+
+                    GAMBETA DEL MAGO — 3 turnos
+
+                </div>
+
+            </div>
+
+
+            <div class="role-box">
+
+                <h3>
+                    Si no utilizó una habilidad
+                </h3>
+
+                <p>
+                    No es necesario inventar una habilidad utilizada.
+                    Simplemente deberá indicar que no utilizó ninguna
+                    habilidad durante ese post.
+                </p>
+
+                <p>
+                    Ejemplo:
+                    <span class="highlight-green">
+                        Habilidades utilizadas: Ninguna.
+                    </span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             05 — ACCIONES
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                05 / ACCIONES
+            </span>
+
+            <h2>
+                DESCRIBA LO QUE
+                <span>USTED HACE.</span>
+            </h2>
+
+            <p>
+                Las acciones deben describir aquello que realiza
+                su propio personaje. Evite escribir directamente
+                el resultado de una acción que depende del rival.
+            </p>
+
+            <table class="action-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            ACCIÓN
+                        </th>
+
+                        <th>
+                            EJEMPLO
+                        </th>
+
+                        <th>
+                            QUÉ OCURRE DESPUÉS
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Correr
+                        </td>
+
+                        <td>
+                            "Acelero hacia el sector izquierdo."
+                        </td>
+
+                        <td>
+                            Puede generar un duelo de velocidad
+                            si existe oposición.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Pase
+                        </td>
+
+                        <td>
+                            "Busco enviar el balón hacia mi compañero."
+                        </td>
+
+                        <td>
+                            Se resuelve mediante el sistema
+                            correspondiente.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Regate
+                        </td>
+
+                        <td>
+                            "Intento superar al defensor mediante
+                            un cambio de dirección."
+                        </td>
+
+                        <td>
+                            El defensor puede responder y se
+                            genera el enfrentamiento correspondiente.
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Tiro
+                        </td>
+
+                        <td>
+                            "Armo la pierna y busco rematar hacia
+                            el segundo palo."
+                        </td>
+
+                        <td>
+                            El resultado depende de la resolución
+                            correspondiente.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- ========================================
+             06 — DUELOS
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                06 / DUELOS
+            </span>
+
+            <h2>
+                CUANDO DOS JUGADORES
+                <span>SE ENFRENTAN.</span>
+            </h2>
+
+            <p>
+                Los duelos son fundamentales dentro de STRIKER//GEN.
+                Cuando una acción enfrenta directamente las capacidades
+                de dos jugadores, se utiliza la estadística correspondiente
+                y normalmente se resuelve mediante una ruleta.
+            </p>
+
+            <div class="duel-flow">
+
+                <div class="duel-step">
+
+                    <b>01</b>
+
+                    <span>
+                        Un jugador realiza
+                        una acción.
+                    </span>
+
+                </div>
+
+
+                <div class="duel-step">
+
+                    <b>02</b>
+
+                    <span>
+                        El rival responde
+                        a la acción.
+                    </span>
+
+                </div>
+
+
+                <div class="duel-step">
+
+                    <b>03</b>
+
+                    <span>
+                        Se determina el
+                        duelo correspondiente.
+                    </span>
+
+                </div>
+
+
+                <div class="duel-step">
+
+                    <b>04</b>
+
+                    <span>
+                        La resolución determina
+                        qué ocurre.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="role-box">
+
+                <h3>
+                    No siempre existe una ruleta
+                </h3>
+
+                <p>
+                    Si una acción puede resolverse directamente mediante
+                    una anulación, la ruleta puede dejar de ser necesaria.
+                </p>
+
+                <p>
+                    Un ejemplo es la
+                    <span class="highlight-red">
+                        Mano Blanca
+                    </span>:
+                    si un jugador deja una característica fundamental
+                    de su acción sin especificar y el rival realiza
+                    una interpretación válida de esa omisión, la situación
+                    puede resolverse directamente.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             07 — POSICIONAMIENTO
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                07 / POSICIONAMIENTO
+            </span>
+
+            <h2>
+                SIEMPRE SEPA
+                <span>DÓNDE ESTÁ.</span>
+            </h2>
+
+            <p>
+                El posicionamiento es uno de los elementos más
+                importantes del rol técnico.
+            </p>
+
+            <div class="position-box">
+
+                <h3>
+                    Posicionamiento inicial
+                </h3>
+
+                <p>
+                    Al comenzar una jugada debe quedar claro dónde
+                    está ubicado su personaje.
+                </p>
+
+                <p>
+                    No es suficiente con decir que "corre hacia el área"
+                    si nunca se estableció desde dónde comenzó.
+                </p>
+
+                <p>
+                    A medida que la jugada continúa, también debe
+                    indicarse cómo y hacia dónde se desplaza.
+                </p>
+
+                <p>
+                    Si un jugador no especifica su posicionamiento
+                    o traslado, puede producirse una
+                    <span class="highlight-red">
+                        anulación directa del post.
+                    </span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             08 — MANIPULACIÓN
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                08 / MANIPULACIÓN
+            </span>
+
+            <h2>
+                ¿A QUIÉN PUEDE
+                <span>CONTROLAR?</span>
+            </h2>
+
+            <p>
+                Una de las reglas fundamentales del rol es diferenciar
+                entre las acciones de su personaje, las acciones de sus
+                aliados y las acciones de sus rivales.
+            </p>
+
+            <div class="manipulation">
+
+                <div class="manipulation-card ally">
+
+                    <h3>
+                        Aliados
+                    </h3>
+
+                    <p>
+                        El jugador que posee la pelota puede manipular
+                        determinadas acciones de sus compañeros para
+                        coordinar la jugada.
+                    </p>
+
+                </div>
+
+
+                <div class="manipulation-card enemy">
+
+                    <h3>
+                        Rivales
+                    </h3>
+
+                    <p>
+                        No puede decidir qué hace un jugador rival.
+                        Intentar hacerlo constituye Mano Negra y puede
+                        provocar una anulación directa de la parte
+                        correspondiente del post.
+                    </p>
+
+                </div>
+
+
+                <div class="manipulation-card staff">
+
+                    <h3>
+                        Límites
+                    </h3>
+
+                    <p>
+                        La sobre-manipulación de aliados también puede
+                        ser sancionada. El Staff determina cuándo una
+                        manipulación excede los límites razonables.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             09 — MANO NEGRA
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                09 / MANO NEGRA
+            </span>
+
+            <h2>
+                NUNCA ESCRIBA
+                <span>POR EL RIVAL.</span>
+            </h2>
+
+            <div class="role-box">
+
+                <h3>
+                    Incorrecto
+                </h3>
+
+                <p>
+                    "Corro hacia el defensor, lo supero y él no logra
+                    reaccionar ante mi movimiento."
+                </p>
+
+                <p>
+                    El problema es que el jugador decidió por el defensor
+                    que no pudo reaccionar.
+                </p>
+
+            </div>
+
+
+            <div class="role-box">
+
+                <h3>
+                    Correcto
+                </h3>
+
+                <p>
+                    "Corro hacia el defensor y realizo un cambio de
+                    dirección buscando superarlo."
+                </p>
+
+                <p>
+                    Ahora el defensor puede responder y la situación
+                    puede resolverse mediante el duelo correspondiente.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             10 — SOBRE-MANIPULACIÓN
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                10 / SOBRE-MANIPULACIÓN
+            </span>
+
+            <h2>
+                SUS ALIADOS NO SON
+                <span>SU PERSONAJE.</span>
+            </h2>
+
+            <p>
+                Aunque la pelota otorgue al poseedor cierta capacidad
+                de coordinación sobre sus compañeros, esa capacidad
+                tiene límites.
+            </p>
+
+            <div class="rule-grid">
+
+                <div class="rule-card good">
+
+                    <h3>
+                        Manipulación razonable
+                    </h3>
+
+                    <p>
+                        "Le indico a mi compañero que se abra hacia
+                        la banda para generar una opción de pase."
+                    </p>
+
+                </div>
+
+
+                <div class="rule-card bad">
+
+                    <h3>
+                        Sobre-manipulación
+                    </h3>
+
+                    <p>
+                        "Mi compañero corre, cambia de dirección,
+                        esquiva a un rival, recibe, devuelve el pase,
+                        vuelve a correr y realiza otra acción."
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="role-box">
+
+                <p>
+                    La sobre-manipulación queda a criterio del Staff.
+                    Si se considera que un jugador está controlando
+                    excesivamente las acciones de un aliado, el post
+                    puede ser anulado.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             11 — MANO BLANCA
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                11 / MANO BLANCA
+            </span>
+
+            <h2>
+                ESPECIFIQUE
+                <span>SU ACCIÓN.</span>
+            </h2>
+
+            <p>
+                Una acción demasiado abierta puede permitir una
+                interpretación desfavorable mediante Mano Blanca.
+            </p>
+
+            <div class="rule-grid">
+
+                <div class="rule-card bad">
+
+                    <h3>
+                        Poco específico
+                    </h3>
+
+                    <p>
+                        "Corro hacia la pelota."
+                    </p>
+
+                    <p>
+                        No se especifica velocidad ni otros elementos
+                        importantes de la acción.
+                    </p>
+
+                </div>
+
+
+                <div class="rule-card good">
+
+                    <h3>
+                        Específico
+                    </h3>
+
+                    <p>
+                        "Acelero al máximo hacia la pelota, manteniendo
+                        mi trayectoria por el sector derecho."
+                    </p>
+
+                    <p>
+                        La intención y la ejecución quedan claramente
+                        establecidas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             12 — TIEMPOS
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                12 / TIEMPOS
+            </span>
+
+            <h2>
+                EL POST TAMBIÉN
+                <span>TIENE UN LÍMITE.</span>
+            </h2>
+
+            <p>
+                Cada jugador debe respetar los tiempos establecidos
+                para responder a una jugada.
+            </p>
+
+            <div class="time-grid">
+
+                <div class="time-card">
+
+                    <h3>
+                        12H
+                    </h3>
+
+                    <strong>
+                        PLAZO NORMAL
+                    </strong>
+
+                    <p>
+                        Es el tiempo estándar disponible para enviar
+                        el post.
+                    </p>
+
+                </div>
+
+
+                <div class="time-card">
+
+                    <h3>
+                        24H
+                    </h3>
+
+                    <strong>
+                        CON EXTENSIÓN
+                    </strong>
+
+                    <p>
+                        Puede solicitarse una extensión. El máximo
+                        permitido es de 24 horas.
+                    </p>
+
+                </div>
+
+
+                <div class="time-card">
+
+                    <h3>
+                        NULO
+                    </h3>
+
+                    <strong>
+                        FUERA DE PLAZO
+                    </strong>
+
+                    <p>
+                        Un post enviado fuera del tiempo correspondiente
+                        se considera nulo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             13 — CHECKLIST
+        ======================================== -->
+
+        <section class="role-section reveal">
+
+            <span class="role-number">
+                13 / CHECKLIST
+            </span>
+
+            <h2>
+                ANTES DE
+                <span>ENVIAR SU POST.</span>
+            </h2>
+
+            <div class="checklist">
+
+                <h3>
+                    Revise su jugada
+                </h3>
+
+                <ul>
+
+                    <li>
+                        ¿Está claro dónde se encuentra mi personaje?
+                    </li>
+
+                    <li>
+                        ¿Indiqué correctamente mis desplazamientos?
+                    </li>
+
+                    <li>
+                        ¿Está claro qué acción estoy intentando realizar?
+                    </li>
+
+                    <li>
+                        ¿Especifiqué los elementos importantes de mi acción?
+                    </li>
+
+                    <li>
+                        ¿Estoy escribiendo únicamente las acciones de
+                        mi personaje?
+                    </li>
+
+                    <li>
+                        Si manipulo un aliado, ¿la acción es razonable?
+                    </li>
+
+                    <li>
+                        ¿Estoy evitando controlar las acciones de los rivales?
+                    </li>
+
+                    <li>
+                        ¿Estoy evitando determinar el resultado de mi acción?
+                    </li>
+
+                    <li>
+                        ¿Estoy utilizando la ficha registrada al inicio
+                        del partido?
+                    </li>
+
+                    <li>
+                        ¿Estoy evitando entrenar durante un partido oficial?
+                    </li>
+
+                    <li>
+                        ¿Agregué mis estadísticas al final del post?
+                    </li>
+
+                    <li>
+                        ¿Indiqué las habilidades utilizadas y sus cooldowns?
+                    </li>
+
+                    <li>
+                        ¿Estoy dentro del plazo de posteo?
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             FINAL
+        ======================================== -->
+
+        <section class="final-role reveal">
+
+            <h2>
+                ROLEÁ LA JUGADA.
+                <span>NO EL RESULTADO.</span>
+            </h2>
+
+            <p>
+                El objetivo del rol técnico es que cada jugador pueda
+                desarrollar su propio estilo sin quitarle al resto
+                la posibilidad de participar.
+            </p>
+
+            <br>
+
+            <p>
+                Describa su posición, sus movimientos y sus intenciones.
+                Tome decisiones sobre su personaje. Coordine a sus
+                aliados cuando corresponda. Pero deje que sus rivales
+                respondan y que los sistemas del rol determinen el
+                resultado cuando exista un enfrentamiento.
+            </p>
+
+            <br>
+
+            <p>
+                Recuerde que cada partido comienza con una ficha
+                registrada, continúa sin entrenamientos durante el
+                encuentro y exige mantener actualizado el estado
+                del jugador al final de cada post.
+            </p>
+
+            <br>
+
+            <p>
+                Una buena jugada no es la que obliga al rival a perder.
+                Es la que le da al rival la oportunidad de responder
+                y demuestra por qué su personaje merece ganar.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer>
+
+        <b>
+            © STRIKER//GEN
+        </b>
+
+        <span>
+            CREATE YOUR EGO. BUILD YOUR LEGACY.
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
