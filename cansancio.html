@@ -93,6 +93,7 @@
 
     </nav>
 
+
     <header class="hero">
 
         <div class="hero-inner">
@@ -118,7 +119,13 @@
 
     </header>
 
+
     <main class="page">
+
+
+        <!-- ========================================
+             ENERGÍA INICIAL
+        ======================================== -->
 
         <div class="rule reveal">
 
@@ -134,6 +141,11 @@
 
         </div>
 
+
+        <!-- ========================================
+             ESTADOS
+        ======================================== -->
+
         <div class="grid cards-4">
 
             <div class="card reveal">
@@ -148,6 +160,7 @@
 
             </div>
 
+
             <div class="card reveal">
 
                 <h2>
@@ -155,10 +168,12 @@
                 </h2>
 
                 <p>
-                    Cansado. Empieza a notarse narrativamente. -5% a todas sus stats
+                    Cansado. Empieza a notarse narrativamente.
+                    -5% a todas sus stats.
                 </p>
 
             </div>
+
 
             <div class="card reveal">
 
@@ -167,10 +182,12 @@
                 </h2>
 
                 <p>
-                    Fatigado. -5% a todas sus stats.
+                    Fatigado.
+                    -5% a todas sus stats.
                 </p>
 
             </div>
+
 
             <div class="card reveal">
 
@@ -179,12 +196,18 @@
                 </h2>
 
                 <p>
-                    Agotado. -50% a todas sus stats
+                    Agotado.
+                    -50% a todas sus stats.
                 </p>
 
             </div>
 
         </div>
+
+
+        <!-- ========================================
+             0%
+        ======================================== -->
 
         <div class="rule reveal">
 
@@ -194,11 +217,17 @@
 
             <p>
                 El jugador prácticamente no puede mantener acciones
-                de alta intensidad y el DT debería considerar sustituirlo.<br>
+                de alta intensidad y el DT debería considerar sustituirlo.
+                <br>
                 Sus stats disminuyen a 1.
             </p>
 
         </div>
+
+
+        <!-- ========================================
+             GASTO DE ENERGÍA
+        ======================================== -->
 
         <div class="rule reveal">
 
@@ -208,10 +237,8 @@
 
             <p>
                 Movimiento normal −1% ·
-                Carrera −2% ·
-                Sprint −4% ·
+                Carrera / Sprint −3% ·
                 Duelo físico −3% ·
-                Presión intensa −3% ·
                 Regate exigente −3% ·
                 Acción especial −5% ·
                 Acción extremadamente exigente −7%.
@@ -219,7 +246,138 @@
 
         </div>
 
+
+        <!-- ========================================
+             RECUPERACIÓN
+        ======================================== -->
+
+        <div class="rule reveal">
+
+            <h2>
+                RECUPERACIÓN DE ENERGÍA
+            </h2>
+
+            <p>
+                Cada <b class="highlight">5 turnos</b> se produce una
+                recuperación automática de energía para los jugadores
+                que no estén participando directamente en la acción.
+            </p>
+
+            <br>
+
+            <p>
+                En cada recuperación, los jugadores recuperan
+                <b class="highlight">10% de energía</b>.
+            </p>
+
+            <br>
+
+            <p>
+                Esta recuperación se aplica a todos los jugadores
+                excepto a dos:
+            </p>
+
+            <ul>
+
+                <li>
+                    El jugador que actualmente posee la pelota.
+                </li>
+
+                <li>
+                    El jugador que está por realizar el siguiente post.
+                </li>
+
+            </ul>
+
+            <br>
+
+            <p>
+                Ambos continúan gastando y administrando su energía
+                normalmente, ya que se encuentran directamente
+                involucrados en el desarrollo de la jugada.
+            </p>
+
+        </div>
+
+
+        <!-- ========================================
+             REGLA DE LOS 5 TURNOS
+        ======================================== -->
+
+        <div class="rule reveal">
+
+            <h2>
+                CADA 5 TURNOS
+            </h2>
+
+            <p>
+                La recuperación se activa una vez completados
+                <b class="highlight">5 turnos de rol</b>.
+            </p>
+
+            <br>
+
+            <p>
+                Ejemplo:
+            </p>
+
+            <p>
+                Turno 1 → Turno 2 → Turno 3 → Turno 4 → Turno 5
+                <br>
+                ↓
+                <br>
+                Recuperación de <b class="highlight">10%</b> para los
+                jugadores que no poseen la pelota ni están por rolear.
+            </p>
+
+            <br>
+
+            <p>
+                Una vez realizada la recuperación, el conteo vuelve
+                a comenzar desde cero hasta alcanzar nuevamente
+                los cinco turnos.
+            </p>
+
+        </div>
+
+
+        <!-- ========================================
+             IMPORTANTE
+        ======================================== -->
+
+        <div class="rule reveal">
+
+            <h2>
+                ADMINISTRACIÓN DE LA ENERGÍA
+            </h2>
+
+            <p>
+                La energía representa la capacidad del jugador para
+                mantener su rendimiento durante el encuentro.
+                Los jugadores deberán administrar sus acciones,
+                evitando gastar energía innecesariamente.
+            </p>
+
+            <br>
+
+            <p>
+                La recuperación de cada 5 turnos no elimina el
+                cansancio acumulado de manera instantánea. Simplemente
+                devuelve una parte de la energía disponible del jugador.
+            </p>
+
+            <br>
+
+            <p>
+                La energía nunca puede superar el
+                <b class="highlight">100%</b>.
+            </p>
+
+        </div>
+
+
     </main>
+
 
     <footer>
 
@@ -232,6 +390,7 @@
         </span>
 
     </footer>
+
 
     <script src="script.js"></script>
 
